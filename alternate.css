@@ -1,0 +1,52 @@
+body, main {
+    background-image: url(peakpx.jpg);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+ }
+
+nav, footer{
+    font-size: smaller;
+}
+
+section, footer{
+    background-color: darkred;
+    box-shadow: 5px 5px 10px wheat;
+    background-size: auto;
+}
+
+ .slide_in{
+    position: relative;
+    top: 0;
+    left: 25%; 
+    transform: translateX(-50%);
+    width: 100%;
+    animation: slideIn 1s forwards;
+
+}
+
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.element{
+    color: whitesmoke;
+}
+
+.element_shadow{
+    color: whitesmoke;
+    text-shadow: 2px 2px 2px black;
+}
+
+.break{
+    height: 40px;
+}
+
+.image_container{
+    display: flex;
+}

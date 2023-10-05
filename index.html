@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="veiwpoint" content="width=device-width, initial-scale=1.0">
+    <title>Project 1 Home Page</title>
+    <link id='csslink' rel="stylesheet" href="main.css">
+</head>
+
+<script>
+    function toggleCSS() {
+      // Obtains the <link> element that links to the css (by using its id).
+      var currentCSS = document.getElementById('csslink');
+
+      // Change the value of href attribute to change the css file.
+      if (currentCSS.getAttribute('href') == 'main.css') {
+        currentCSS.setAttribute('href', 'alternate.css');
+      } else {
+        currentCSS.setAttribute('href', 'main.css');
+      }
+  }
+</script>
+
+<body>
+    <header class="container slide_in">
+        <h1 class="element_shadow">
+            Classic Air Jordans
+        </h1>
+    </header>
+
+    <main>
+        <section class="container slide_in">
+            <p class="element">Air jordans are the most popular basketball sneakers of all time.
+                Jordan brand has grown to be a brand from a billion dollar brand!</p>
+
+            <div></div>
+
+            <h3 class="element_shadow">About Us</h3>
+            <p class="element">The Jordan Brand is a subsidiary of Nike, Inc. It was created for and
+                endorsed by basketball legend Michael Jordan. Established in 1997, the brand is renowned
+                for producing high-quality athletic footwear, apparel, and accessories. The Air Jordan line,
+                which includes signature basketball sneakers and lifestyle shoes, is one of the most iconic and
+                influential in the history of sports and fashion. Jordan Brand has also expanded its reach beyond
+                basketball,
+                collaborating with athletes, musicians, and designers to create a wide range of products. It has become
+                a
+                global cultural phenomenon, known for its distinctive Jumpman logo and its impact on both sports and
+                popular
+                culture.
+            </p>
+            <div class="image_container">
+                <img src="pic1.jpg" alt="picture 1" width=35% height=auto>
+                <img src="pic2.jpg" alt="picture 2" width=39% height=auto>
+                <img src="pic3.jpg" alt="picture 3" width=35% height=auto>
+            </div>
+
+            <div class="break"></div>
+
+            <table class="element_shadow">
+                <caption>Popular Models</caption>
+                <tr>
+                    <th>Air jordan 1</th>
+                    <th>Air jordan 3</th>
+                    <th>Air jordan 4</th>
+                    <th>Air jordan 8</th>
+                    <th>Air jordan 11</th>
+               
+                </tr>
+
+                <tr>
+                    <td>1985</td>
+                    <td>1988</td>
+                    <td>1989</td>
+                    <td>1993</td>
+                    <td>1995</td>
+                </tr>
+
+                <tr>
+                    <td><img src="J1.jpg" width=100% height=auto></td>
+                    <td><img src="j3.jpg" width=100% height=auto></td>
+                    <td><img src="j4.jpg" width=100% height=auto></td>
+                    <td><img src="j8.jpg" width=100% height=auto></td>
+                    <td><img src="j11.jpg" width=100% height=auto></td>
+                </tr>
+            </table>
+
+            <div class="break"></div>
+
+            <div>
+                <h1 class="element_shadow">Gallery</h1>
+                <img src="pic4.jpg" alt="picture 4" width=65% height=auto>
+                <img src="pic5.jpg" alt="picture 5" width=65% height=auto>
+            </div>
+
+            <nav>
+                <h4 class="element_shadow">Navigation</h4>
+                <ul class="element">
+                    <li><a href="index.html">Home Page</a></li>
+                    <li><a href="page_2.html">More Info</a></li>
+                </ul>
+            </nav>
+        </section>
+    </main>
+
+    <footer class="element_shadow">
+        <button onclick="toggleCSS()">Switch Style</button>
+        <br>Project made by Andres Toro. Not affiliated with Nike &copy;
+    </footer>
+</body>
+
+</html>
